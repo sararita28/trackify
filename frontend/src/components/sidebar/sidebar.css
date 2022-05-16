@@ -1,0 +1,41 @@
+#sidebarContainer {
+  flex: 3;
+  height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sidebarWrapper {
+  padding: 20px;
+  margin: 15%;
+}
+
+#sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #132430;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.sidebarListItem:hover,
+.sidebarIcon:hover {
+  font-weight: bold;
+}
+
+.sidebarIcon {
+  margin-right: 15px;
+}
+
+.sidebarListItemText {
+  font-size: x-large;
+  margin-left: 25px;
+}

@@ -1,0 +1,66 @@
+#dashboardContainer {
+  flex: 9;
+  padding: 20px;
+}
+
+#dashboardWrapper {
+  padding: 20px;
+}
+
+#dashboardHeader {
+}
+
+#kpiContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/**/
+
+.kpi {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  width: 30vw;
+  height: 30vh;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.kpiNumber {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 72px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.kpiText {
+  font-family: "Lato", sans-serif;
+  font-size: larger;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  color: #132430;
+}
+
+/**/
+
+.kpiNumber1 {
+  color: #132430;
+}
+
+.kpiNumber2 {
+  color: #b4f4fa;
+}
+
+.kpiNumber3 {
+  color: #b2afe7;
+}
+
+.kpiNumber4 {
+  color: #8ca9e4;
+}

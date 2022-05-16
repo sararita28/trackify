@@ -1,0 +1,83 @@
+#editItemContainer {
+  flex: 9;
+  padding: 20px;
+}
+
+#editItemdHeader {
+}
+
+/***/
+
+.editItemInput {
+  border: 0.5px solid lightgray;
+  color: gray;
+}
+
+.editItemInput:focus {
+  outline: none;
+}
+
+#editItemTableWrapper {
+  margin-top: 50px;
+}
+
+#editItemTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tableRow {
+  border: 1px solid lightgrey;
+}
+
+#editItemStatus {
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.editItemActiveStatus {
+  background-color: rgba(0, 128, 0, 0.605);
+}
+
+.editItemDeletedStatus {
+  background-color: rgba(255, 99, 71, 0.605);
+}
+
+.editItemActionIcon {
+  cursor: pointer;
+  margin: 5px;
+  color: #132430;
+}
+
+.deleteItemIcon:hover {
+  color: rgba(255, 99, 71, 0.605);
+}
+
+.restoreItemIcon:hover,
+.saveIcon:hover {
+  color: rgba(0, 128, 0, 0.605);
+}
+
+.editItemLocation {
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+/**/
+
+#editItemComment > h4 {
+  margin-top: 40px;
+}
+
+#editItemCommentText {
+  margin-top: 10px;
+  padding: 10px;
+  width: 96.5%;
+  min-height: 5vh;
+  height: fit-content;
+  border: 0.5px solid lightgray;
+}

@@ -1,0 +1,38 @@
+#createItemContainer {
+  flex: 9;
+  padding: 20px;
+  height: calc(100vh - 180px);
+}
+
+#createItemdWrapper {
+  padding: 20px;
+}
+
+/***/
+
+.createBlockItem {
+  transform: translate(-30%, 0%);
+}
+
+.createItemInput {
+  width: 30vw;
+}
+
+#createItemForm {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#createItemButton {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 15px;
+  margin-right: 300px;
+  font-size: large;
+}
+
+#createItemButton:hover {
+}

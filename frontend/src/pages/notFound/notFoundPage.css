@@ -1,0 +1,25 @@
+#notFoundContainer {
+  flex: 9;
+  text-align: center;
+  transform: translate(-15%, 25%);
+}
+
+#notFoundHeader {
+  font-size: 100px;
+}
+
+#notFoundSecondHeader {
+  font-size: 25px;
+}
+
+#notFoundTakeMeHome {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#notFoundTakeMeHome:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,161 @@
+#singleItemContainer {
+  flex: 9;
+  padding: 20px;
+}
+
+#singleItemdWrapper {
+  padding: 20px;
+}
+
+/***/
+
+#singleItemTableWrapper {
+  margin-top: 50px;
+}
+
+#singleItemTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.moveRightABit {
+  position: relative;
+  left: 2vw;
+}
+
+.tableRow {
+  border: 1px solid lightgrey;
+}
+
+#singleItemStatus {
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.singleItemActiveStatus {
+  background-color: rgba(0, 128, 0, 0.605);
+}
+
+.singleItemDeletedStatus {
+  background-color: rgba(255, 99, 71, 0.605);
+}
+
+.singleItemActionIcon {
+  cursor: pointer;
+  margin: 5px;
+  color: #132430;
+}
+
+.deleteItemIcon:hover {
+  color: rgba(255, 99, 71, 0.605);
+}
+
+.restoreItemIcon:hover {
+  color: rgba(0, 128, 0, 0.605);
+}
+
+.singleItemLocation {
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+/**/
+
+#singleItemComment > h4 {
+  margin-top: 40px;
+}
+
+#singleItemCommentText {
+  margin-top: 10px;
+  padding: 10px;
+  width: 96.5%;
+  min-height: 5vh;
+  height: fit-content;
+  border: 0.5px solid lightgray;
+}
+
+#singleItemFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#singleItemCommentBtns {
+  margin-right: 100px;
+}
+
+.singleItemEditComment {
+  cursor: pointer;
+}
+
+.singleItemEditComment:hover {
+  color: green;
+}
+
+.singleItemDeleteComment {
+  cursor: pointer;
+}
+
+.singleItemDeleteComment:hover {
+  color: tomato;
+}
+
+/* CSS for the popup */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.closePopup {
+  color: Black;
+  float: right;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.closePopup:hover {
+  color: red;
+}
+
+.popupText {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.popupButton {
+  padding: 5px;
+  font-size: large;
+  margin: 30px 20px 30px 20px;
+  cursor: pointer;
+}
+
+.popupButton:hover {
+  opacity: 0.8;
+  background-color: rgba(255, 127, 80, 0.2);
+}
+
+.addDeleteComments {
+  padding: 10px;
+  width: 80%;
+}
