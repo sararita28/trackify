@@ -102,7 +102,7 @@ export default function Deleted() {
           </table>
         </div>
       </div>
-      {data.length < 1 ? (
+      {data.length < 1 && loading == false ? (
         <span id="emptyDeletedList">
           There are currently no deleted items in the inventory.
         </span>

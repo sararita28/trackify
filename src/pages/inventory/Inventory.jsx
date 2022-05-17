@@ -151,7 +151,7 @@ export default function Inventory() {
             </table>
           </div>
         </div>
-        {data.length < 1 ? (
+        {data.length < 1 && loading == false ? (
           <span className="emptyList">
             There are no items in the inventory. Please add some to view them
             here.
