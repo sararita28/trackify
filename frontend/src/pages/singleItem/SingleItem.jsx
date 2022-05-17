@@ -192,8 +192,7 @@ export default function SingleItem() {
                     )}
                   </tr>
                 </tbody>
-
-                {modalOpen && displayModal()}
+                <>{modalOpen && displayModal()}</>
               </>
             )}
           </table>

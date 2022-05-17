@@ -34,7 +34,6 @@ export default function Sidebar() {
           </li>
         </ul>
       </div>
-
       <div id="my-links">
         <ExternalLink
           href="https://github.com/sararita28"
@@ -57,7 +56,7 @@ export default function Sidebar() {
         >
           <LanguageIcon className="my-links-link" />
         </ExternalLink>
-      </div>
+      </div>{" "}
     </div>
   );
 }

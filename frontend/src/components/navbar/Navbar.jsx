@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const { data } = useFetch("inventory");
   const [popupOpen, setPopupOpen] = useState(false);
-
   const options = data.map((item) => {
     const id = item._id,
       category = item.category,
@@ -91,9 +90,6 @@ export default function Navbar() {
         <div>
           <Autocomplete
             disablePortal
-            InputProps={{
-              disableUnderline: true,
-            }}
             options={options}
             renderInput={(params) => (
               <TextField

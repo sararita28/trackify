@@ -12,6 +12,14 @@ module.exports = ({ mode } = { mode: "production" }) => {
       host: "0.0.0.0",
       port: 3000,
       historyApiFallback: true,
+      allowedHosts: "all",
+      //for Replit config
+      proxy: {
+        "/websocket": {
+          target: "wss://trackify.sararita28.repl.co:3000/ws",
+          ws: true, // important
+        },
+      },
     },
     output: {
       publicPath: "/",

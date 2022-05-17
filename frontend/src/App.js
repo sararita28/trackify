@@ -11,7 +11,6 @@ import SingleInventoryItem from "./pages/singleItem/SingleItem.jsx";
 import CreateItem from "./pages/createItem/CreateItem.jsx";
 import NotFoundPage from "./pages/notFound/NotFoundPage.jsx";
 import EditItem from "./pages/editItem/EditItem.jsx";
-
 axios.defaults.baseURL = "http://0.0.0.0:3001";
 
 function App() {
