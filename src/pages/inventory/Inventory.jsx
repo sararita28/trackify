@@ -9,19 +9,16 @@ import useFetch from "../../hooks/useFetch";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Tooltip from "@mui/material/Tooltip";
-let itemId = {
-  val: null,
-};
 
 export default function Inventory() {
   const { data, loading } = useFetch("inventory");
   const [modalOpen, setModalOpen] = useState(false);
   const [comments, setComments] = useState("");
   const [itemDeleted, setItemDeleted] = useState(false);
-
+  const [itemId, setItemId] = useState(null);
   const handleNewComment = async () => {
     try {
-      await axios.put("/comment/" + itemId.val, {
+      await axios.put("/comment/" + itemId, {
         comments: comments,
       });
       window.location.replace("inventory");
@@ -42,7 +39,7 @@ export default function Inventory() {
   };
 
   function handleOpenPopup(id) {
-    itemId.val = id;
+    setItemId(id);
     setModalOpen(true);
   }
 
@@ -69,7 +66,7 @@ export default function Inventory() {
           </p>
           <div>
             <button
-              onClick={() => handleDelete(itemId.val)}
+              onClick={() => handleDelete(itemId)}
               className="popupButton"
             >
               Yes

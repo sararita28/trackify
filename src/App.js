@@ -11,7 +11,8 @@ import SingleInventoryItem from "./pages/singleItem/SingleItem.jsx";
 import CreateItem from "./pages/createItem/CreateItem.jsx";
 import NotFoundPage from "./pages/notFound/NotFoundPage.jsx";
 import EditItem from "./pages/editItem/EditItem.jsx";
-axios.defaults.baseURL = "http://0.0.0.0:3001";
+const backendURL = "wss://trackify.sararita28.repl.co:3000/ws"; //repl link to backend
+axios.defaults.baseURL = backendURL; //should be http://0.0.0.0:3001" on local computer
 
 function App() {
   return (

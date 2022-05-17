@@ -10,7 +10,6 @@ module.exports = ({ mode } = { mode: "production" }) => {
     devServer: {
       open: true,
       host: "0.0.0.0",
-      port: 3000,
       historyApiFallback: true,
       allowedHosts: "all",
       //for Replit config
